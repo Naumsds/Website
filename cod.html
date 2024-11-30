@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naum.MP4 - Professional Video Editing</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4D85FF;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1A2933;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #4D85FF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        /* Slim Bars on Both Sides */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background-color: #333;
+            z-index: 10;
+        }
+
+        .sidebar-left {
+            left: 0;
+        }
+
+        .sidebar-right {
+            right: 0;
+        }
+
+        /* Content Area */
+        .content {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 150px 20px;
+            background-color: #333;
+            background-image: url('video-editing.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #4D85FF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #0F2B3D;
+        }
+
+        /* Styling for logo and videos with borders */
+        .hero img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 4px solid #00FFFB; /* Border for the logo */
+        }
+
+        .video-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        video {
+            width: 400px;
+            height: auto;
+            border-radius: 5px;
+            border: 4px solid #00FFFB; /* Border for video frames */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1A2933;
+            padding: 20px;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #07578C;
+        }
+
+        /* Services Section */
+        .services {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #07578C;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #07578C;
+            color: white;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: white;
+        }
+
+        .contact-section button {
+            background-color: #4D85FF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #07578C;
+        }
+
+        /* Message After Form Submit */
+        .thank-you-message {
+            display: none;
+            font-size: 20px;
+            color: #07578C;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slim Bars (Left and Right) -->
+    <div class="sidebar sidebar-left"></div>
+    <div class="sidebar sidebar-right"></div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="naumz.png" alt="Naum.MP4 Logo">
+            <h1>Welcome to Naum.MP4</h1>
+            <p>Your Video Editing Story Starts Here</p>
+            <a href="/contact" class="cta-button">Get Started</a>
+
+            <!-- Add 3 Short Videos -->
+            <div class="video-gallery">
+                <video controls>
+                    <source src="Finish1.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="Finish2.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="Finish3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Text below the videos -->
+            <p style="text-align: center; margin-top: 20px;">Here's an example of my edited videos</p>
+        </section>
+
+        <!-- Footer Between Sections -->
+        <footer>
+        </footer>
+
+        <!-- About Section -->
+        <section class="about">
+            <h1>About Naum.MP4</h1>
+            <p>Hi, I'm Naum. I specialize in creating polished, high-quality videos for YouTube creators, businesses, and artists. With years of experience in editing, I bring your vision to life with creative precision and attention to detail.</p>
+        </section>
+
+        <!-- Footer Between Sections -->
+        <footer>
+        </footer>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h1>Our Video Editing Services</h1>
+            <ul>
+                <li><strong>Full Video Production</strong> - From script to screen, full video production services.</li>
+                <li><strong>YouTube & Vlog Editing</strong> - Fast, engaging edits to grow your audience.</li>
+                <li><strong>Social Media Content</strong> - Quick cuts and trendy edits for Instagram, TikTok, etc.</li>
+                <li><strong>Music Video Editing</strong> - High-energy editing to match the vibe of your track.</li>
+                <li><strong>Corporate Videos</strong> - Professional edits for business presentations and ads.</li>
+                <li><strong>Color Grading & Audio Mixing</strong> - Enhance footage with cinematic color and crisp sound.</li>
+            </ul>
+        </section>
+
+        <!-- Footer Between Sections -->
+        <footer>
+        </footer>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or want to start a project, don't hesitate to reach out! We're here to help you bring your vision to life.</p>
+
+            <!-- Contact Form -->
+            <form id="contactForm" action="/submit-form" method="POST" onsubmit="handleFormSubmit(event)">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Write your message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+
+            <!-- Thank You Message (Initially Hidden) -->
+            <div id="thankYouMessage" class="thank-you-message">
+                <p>Thank you for your information. <a href="/">Go back to homepage</a>.</p>
+            </div>
+        </section>
+
+        <!-- Footer Between Sections -->
+        <footer>
+            <p>© 2024 Naum.MP4 – All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Hide the form
+            document.getElementById('contactForm').style.display = 'none';
+
+            // Show the thank you message
+            document.getElementById('thankYouMessage').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
+``
